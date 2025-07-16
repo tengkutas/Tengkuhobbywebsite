@@ -1,0 +1,177 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	background-color: #d4d0b9; 
+}
+
+/* 1. Daftarkan font */
+@font-face{
+  font-family: 'TengkuSignature';
+  src: url("../fontsSignaturaMonoline.woff/FeelingLonely-JRa0n.otf") format('woff2'),
+       url("../fontsSignaturaMonoline.woff/FeelingLonely-JRa0n.otf") format('woff');
+  font-weight: normal;
+  font-style : normal;
+}
+
+/* 2. Guna font tu untuk H1 saja */
+#navbaratasan h1{
+  font-family: 'TengkuSignature', cursive;
+  font-size  : 42px;      /* ubah ikut suka */
+  font-weight: normal;    /* pastikan nipis macam tandatangan */
+  margin-bottom: -40px;
+  margin-top:-10px;
+  float: left;
+}
+
+#navbaratasan{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff; 
+  z-index: 999;
+  padding: 15px 30px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+  word-spacing: 50px;
+}
+
+a {color:black; text-decoration:none;}
+
+#header {
+	clear:both;
+	color: white;
+	text-align: center;
+	font-size: 100px
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  height: 100vh; /* penuh skrin */
+  margin-bottom: -40px;
+}
+
+.card.reverse {
+  flex-direction: row-reverse;
+}
+
+
+.card-text h2 {
+  border: 0px solid #000;
+  margin-top: 50px;
+  text-align: center;
+  color: white;
+  height: 10px;
+  font-size: 50px;
+   background-color: #90997f;
+  padding: 50px;
+}
+
+.card-text h1 {
+  font-size: 100px;
+  color: white;
+  padding-left: 30px;
+  margin-top: -200px;
+	
+}
+
+.card-text p {
+  padding: 40px 0;
+  text-align: center;
+  color: #48392e;
+  font-size: 20px;
+}
+
+.bg-blue {
+  background-color: #d4d0b9; /* biru lembut */
+  
+}
+
+.bg-blue img {
+	 box-shadow: 0 20px 5px rgba(0,30,0,0.30);
+}
+
+.bg-pink img {
+	 box-shadow: 0 20px 5px rgba(0,30,0,0.30);
+}
+
+
+.bg-pink {
+  background-color: #90997f; /* pink lembut */
+}
+
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  transition: all 1.2s ease-out;
+}
+
+.scroll-reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.star-rating {
+  font-size: 70px; /* Besarkan bintang */
+  color: gold;     /* Warna bintang */
+  text-align: center; /* Tengah */
+  margin-top: 20px; /* Jarak atas */
+  
+}
+
+.star-rating span {
+  cursor: pointer;
+}
+
+.genre-tags {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.genre-pill {
+  display: inline-block;
+  padding: 6px 18px;
+  margin: 6px;
+  border: 2px solid #444;     /* Warna border */
+  border-radius: 999px;        /* Buat bentuk betul-betul bujur */
+  background-color: transparent; /* Tiada warna latar */
+  color: #444;                /* Warna tulisan */
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;  /* Huruf besar semua */
+  cursor: default;
+  transition: 0.3s ease;
+}
+
+.genre-pill:hover {
+  background-color: #444;
+  color: white;
+}
+
+#footer {
+	clear:both;  
+	text-align: center;
+	background-color: #9ea99c;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 18px;
+	color: white;
+	margin-top: 40px;
+	width: 100%;
+	position: static;
+}
+
+#footer img {
+	float:right;
+	padding:2px;
+}
